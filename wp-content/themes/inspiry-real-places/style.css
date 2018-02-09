@@ -1,0 +1,912 @@
+/*
+	Theme Name: Elysian Real Estate
+	Theme URI: http://brandstallion.com/
+	Description: BrandStallion theme for Real Estate Website.
+	Author: Ronald Jospeh
+	Author URI: http://themeforest.net/user/inspirythemes/portfolio
+	Version: 1.3.2
+	Text Domain: inspiry
+    Domain Path: /languages
+	License: GNU General Public License version 3.0
+	License URI: http://www.gnu.org/licenses/gpl-3.0.html
+	Tags: custom-background, threaded-comments, translation-ready, light, one-column, two-columns, three-columns, four-columns, custom-menu, theme-options, left-sidebar, right-sidebar, responsive-layout, featured-images, full-width-template, threaded-comments, post-formats, rtl-language-support, custom-colors
+
+	----------------------------------------------------------------------------------------------------------------*/
+@font-face{ 
+	font-family: 'Utopia';
+	src: url('fonts/Utopia.ttf') format('truetype');
+}
+@font-face{ 
+	font-family: 'Utopia-regular';
+	src: url('fonts/UtopiaRegular.ttf') format('truetype');
+}
+@font-face{ 
+	font-family: 'Utopia-bold';
+	src: url('fonts/UtopiaBold.ttf') format('truetype');
+}
+.clear{clear: both;}
+.home-header
+{
+    position:relative;
+}
+.home-header-inside
+{
+    position:relative;
+}
+.property-search-header
+{
+    position:relative;
+}
+.property-search-header .search-title
+{
+    display:none;
+}
+/***Footer Social Icons*****/
+.social-footer-icons{}
+.social-footer-icons ul{margin: 0px; padding: 0px; list-style: none;}
+.social-footer-icons ul li{display: inline-block; float: left;width: 27px; height: 27px; display: block; margin:0 13px 0 0;}
+.social-footer-icons ul li a{width: 27px; height: 27px; display: block;}
+.social-footer-icons ul li:nth-child(1){background: url(images/social-icon-footer.png);background-position: 0px 27px;}
+.social-footer-icons ul li:nth-child(2){background: url(images/social-icon-footer.png);background-position: -40px 27px;}
+.social-footer-icons ul li:nth-child(3){background: url(images/social-icon-footer.png);background-position: -82px 27px;}
+.social-footer-icons ul li:nth-child(4){background: url(images/social-icon-footer.png);background-position: -122px 27px;}
+
+.social-footer-icons ul li:nth-child(1):hover{background: url(images/social-icon-footer.png);background-position: 0px 0px; transition: all 0.5s ease;}
+.social-footer-icons ul li:nth-child(2):hover{background: url(images/social-icon-footer.png);background-position: -40px 0px; transition: all 0.5s ease;}
+.social-footer-icons ul li:nth-child(3):hover{background: url(images/social-icon-footer.png);background-position: -82px 0px; transition: all 0.5s ease;}
+.social-footer-icons ul li:nth-child(4):hover{background: url(images/social-icon-footer.png);background-position: -122px 0px; transition: all 0.5s ease;}
+
+/*****contact-info****/
+.contact-info{font-family: 'gotham_lightregular'; font-weight: 200; color: #767676;font-size: 14px;}
+.contact-info ul{margin: 0px; padding: 0px; list-style: none;}
+.contact-info ul li{margin: 0 0 10px 0px; position: relative; padding: 0 0 0 26px;}
+.contact-info ul li:nth-child(1){background: url(images/house-address.png) no-repeat;background-position: 0px 5px;}
+.contact-info ul li:nth-child(2){background: url(images/phone.png) no-repeat;background-position: 0px 2px;}
+.contact-info ul li:nth-child(3){background: url(images/mail.png) no-repeat;background-position: 0px 6px;}
+.contact-info ul li a{color: #767676 !important;}
+/****newsletter-widget****/
+.widget_newsletterwidget span{font-family: 'gotham_lightregular'; font-weight: 200; color: #767676;font-size: 14px; }
+.newsletter-widget input[type="email"]{border:1px dotted #d3d3d3; padding:5px 10px; margin: 10px 0;color: #767676; width:90%;font-family: 'gotham_lightregular'; font-weight: 200; }
+.newsletter-submit{background: #bf953c;width: 170px; height: 28px; color: #fff;border: 0px; text-transform: uppercase; }
+/*****menu-quick-links****/
+#menu-quick-links{}
+#menu-quick-links li{}
+#menu-quick-links li a{font-family: 'gotham_lightregular'; font-weight: 200; color: #767676;font-size: 14px;}
+#menu-quick-links li a:hover{color: #bf953c; text-decoration: underline;}
+
+/*****report-stats-container*****/
+.report-stats-container{background: url(images/report-stats.jpg) no-repeat; background-size: cover;  padding:75px 0 40px;}
+.report-stats-heading{text-align: center;margin: 0 0 40px 0;}
+.report-stats-heading h2{font-family: 'Utopia';  color: #bf953c;font-size: 30px;margin: 0 0 5px 0px;}
+.report-stats-heading span{position: relative;color:#ededed;font-family: 'gotham_lightregular'; font-weight: 200;border-bottom: 1px solid #545b86; padding: 0 0 20px 0;}
+.report-stats-heading span:after{content:""; background: url(images/triangle-bullet1.png) no-repeat;width: 11px; height: 11px; display: block;position: absolute;text-align: right;right: -2px;bottom: -6px;}
+.report-stats-heading span:before{content:""; background: url(images/triangle-bullet1.png) no-repeat;width: 11px; height: 11px; display: block;position: absolute;text-align:left;left: -2px;bottom: -6px;}
+
+.stats-figures ul{margin: 0px 0 10px 0; padding: 0px; list-style: none;}
+.stats-figures ul li{float: left; display: inline-block; margin: 0 0px 0 0; text-align: center; }
+.stats-figures ul li h1{    color: #fff;
+    font-family: 'Utopia-bold';
+    font-size: 60px;
+    font-weight: 500;
+    line-height: 48px;
+    min-height: 100px;}
+.stats-figures ul li h1 span{font-size: 50px;}
+.stats-figures ul li p{color: #fff;font-size: 16px;font-family: 'gotham_lightregular';border-bottom: 1px solid #545b86;padding-bottom: 20px; position: relative; min-height: 210px;}
+
+.stats-figures ul li:nth-child(1) p:after{content:""; background: url(images/triangle-bullet2.png) no-repeat;width: 11px; height: 11px; display: block;position: absolute;text-align: center;left: 50%;bottom: -5px;}
+.stats-figures ul li:nth-child(2) p:after{content:""; background: url(images/triangle-bullet1.png) no-repeat;width: 11px; height: 11px; display: block;position: absolute;text-align: center;left: 50%;bottom: -5px;}
+.stats-figures ul li:nth-child(3) p:after{content:""; background: url(images/triangle-bullet2.png) no-repeat;width: 11px; height: 11px; display: block;position: absolute;text-align: center;left: 50%;bottom: -5px;}
+.stats-figures ul li:nth-child(4) p:after{content:""; background: url(images/triangle-bullet1.png) no-repeat;width: 11px; height: 11px; display: block;position: absolute;text-align: center;left: 50%;bottom: -5px;}
+
+.stats-report-btn{text-align: center; margin:35px 0 15px;}
+.stats-report-btn a{color:#fff; font-family: 'gotham_lightregular'; font-weight: 200;  text-transform: uppercase; width: 339px; height: 37px; margin: 0px auto; display: block; border: 1px solid #fff;line-height: 36px;}
+.stats-report-signup{text-align: center; position: relative;width: 340px;margin: 0px auto;}
+.stats-report-signup input[type="email"]{border:0px dotted #fff; padding:7px 10px; margin: 10px 0;color: #767676; width:300px; font-family: 'gotham_lightregular'; font-weight: 200;    position: relative; display: inline-block;    float: left;}
+.stats-report-signup input[type="submit"]{width: 40px; height: 38px; background: url(images/submit-btn.png) no-repeat; border: 0px; top:10px;   position: relative; display: inline-block; font-size:0px;}
+.stats-report-signup button{width: 40px; height: 38px; background: url(images/submit-btn.png) no-repeat; border: 0px; top:13px;   position: relative; display: inline-block;}
+.mc4wp-form-fields span{float:left;}
+/****newsletter-contain******/
+.newsletter-contain{background: url(images/newsletter-bckgrnd.jpg) no-repeat; background-size: 100% 100%; width: 100%;padding: 65px 0 40px} 
+
+/****awards-heading*****/
+.awards-achievement{padding:40px 0 30px 0; position: relative; text-align: center;}
+.awards-heading{margin: 12px 0 30px 0;}
+.awards-heading h2{font-family: 'Utopia'; color: #424242; font-size: 30px; margin: 10px 0 5px 0;text-shadow: 0.5px 0px;}
+.awards-heading span{font-family: 'gotham_lightregular'; font-weight: 200; color: #6a6a6a; font-size: 14px;}
+
+
+.single-property-heading
+{
+	color:#424242;
+	font-size:30px;
+	padding:40px 0;
+	margin:0;
+	font-family: 'utopiabold';
+	text-align:center;
+}
+.property-detail-search
+{
+	/*background:url(http://brandstallion.com/eylsianglobal/wp-content/uploads/2016/07/single-property-search-header.jpg) no-repeat;*/
+	min-height:398px;
+	/*background-size:cover;*/
+	width:100%;
+	position:relative;
+}
+
+.property-form
+{
+	background:#cc9a2f;
+	padding:20px 25px;
+}
+.property-form h1
+{
+	font-size: 20px;
+    color: #fff;
+    margin: 0;
+    padding: 25px 0 30px 0;
+    font-family: 'gotham_mediumregular';
+}
+.property-form .col-sm-6, .property-form .col-sm-12
+{
+	padding-left:4px;
+	padding-right:4px;
+}
+.property-form .wpcf7-text, .property-form .wpcf7-number, .property-form .wpcf7-quiz, .property-form .wpcf7-date {
+    width: 100%;
+    float: left;
+    width: 100%;
+    padding: 6px 10px;
+    margin-bottom: 8px;
+    border: 0px solid;
+    font-size: 14px;
+	color:#3e4550;
+	font-family: 'gotham_bookregular';
+}
+.property-form textarea {
+   width: 100%;
+    float: left;
+    width: 100%;
+    padding: 6px 10px;
+    margin-bottom: 8px;
+    border: 0px solid;
+    font-size: 14px;
+	color:#3e4550;
+	font-family: 'gotham_bookregular';
+}
+.property-form input[type="submit"] {
+    color: #ffffff;
+    background-color: #bf8b1a;
+    border-color: #bf8b1a;
+	border:0px solid;
+	font-size:15px;
+	color:#fff;
+	font-family: 'gotham_boldregular';
+}
+.property-form input[type="submit"]:hover
+{
+	background-color:#93680c;
+}
+.single-map .col-lg-12
+{
+    padding-left:40px;
+    padding-right:0;
+}
+/****Property Search******/
+.property-meta{margin: 0px; padding: 0px;}
+.propertydescription{padding: 0px; font-family: 'gotham_lightregular'; font-weight: 300; color: #242424; font-size: 14px;margin: 0 0 16px 0;}
+.property-meta-listing{padding: 0px;}
+.property-meta-listing ul{margin: 0px; padding: 0px; list-style: none;}
+.property-meta-listing ul li{    color: #242424;
+    font-family: 'gotham_bookregular';
+    font-size: 14px;
+    line-height: 36px;
+    vertical-align: middle;
+    clear: both;
+    display: block;}
+.property-meta-listing ul li i {
+    font-size: 30px;
+    color: #242d53;
+    width: 34px;
+    line-height: 20px;
+    text-align: left;
+    margin-right: 13px;
+}
+.property-meta-listing ul li .meta-icon{fill:#242d53 !important; }
+.property-meta-listing ul li .iconptype{background: url(images/beds.jpg) no-repeat; }
+.propertymeta{padding: 0px;}
+.product-search-header{ border-bottom: 2px solid #e6e6e6; padding:0 0 5px 0;margin: 0 0 10px 0;}
+.product-search-header .short-desc p{margin: 0 0 0px 0; font: 16.5px;}
+.pro-listing-search{padding: 0px;}
+.search-btn-default{width: 164px; height: 30px; background: #cc9a2f; color: #fff;font-family: 'gotham_bookregular'; font-size: 12.5px;display: block; text-align: center; line-height: 30px;-webkit-border-radius: 4px;
+-moz-border-radius: 4px;
+border-radius: 4px;}
+.search-btn-default:hover{color: #fff;}
+
+
+
+.property-listing-simple {
+    margin: 0 0 15px 0;
+    padding: 35px 0 35px;
+    border-bottom: 2px solid #e6e6e6;
+}
+
+.property-vacant p{color: #cc9a2f; font-family: 'gotham_lightregular'; font-size: 18px; margin: 0 0 5px 0;}
+.page-head-reports{min-height: 100px; max-height: 626px; height: 626px; width: 100%;  position: relative;}
+
+.es_caption{font-family: 'gotham_lightregular'; color: #484848; font-size: 30px;line-height: 27px; }
+.es_caption span{font-size: 18px;}
+.es_caption span:before{content: "\a ";    white-space: pre;}
+.es_lablebox{display: none;}
+.es_textbox{float: left; display: inline-block; width: 70%;}
+.es_textbox input[type="text"]{width: 100%; height: 41px; padding: 2px 5px; border: 1px solid #717171; font-family: 'gotham_lightregular'; }
+.es_button{float: left;    padding: 0px;}
+.es_button input[type="button"]{width: 54px; height: 41px; border: 0px; font-size: 0px;background: url(images/new1.png) no-repeat;}
+.property-listing-simple .titleandmeta
+{
+	padding-left:40px;
+	padding-right:40px;
+}
+.main-property-wrapper div.property-listing-simple:last-child
+{
+	border-bottom:0px !important;
+	padding-bottom:0;
+}
+/****inner-heading***/
+.inner-heading{/*padding:110px 0 0 0;*/}
+.inner-heading h1{/*text-transform: uppercase;*/ font-weight: 300;}
+
+.site-main-reports{padding: 0px;}
+.reports-box{padding: 0 7px; }
+.report-stats-wrapper{padding: 6px;background: #fff;margin: 0 1px 20px 0;}
+.reports-title{font-family: 'utopia_semibold';color: #545454;text-align: center;font-size: 20px;line-height:20px;margin: 20px 0 0px 0;padding: 0 10px;min-height: 55px;text-shadow: 0.1px 0px;}
+.reports-title:after{content: ""; background: url(images/golden-border.png) no-repeat center; display: block; text-align: center; width: 75px; height:2px;margin: 15px auto;}
+.border-wrapper{border:1px solid #cecece;padding: 0 0 30px 0;}
+.reports-download{text-align: center;margin: 10px 0px;}
+.reports-download a{width:200px; height: 34px; text-transform: uppercase; color: #fff; font-weight: 300;font-family: 'gotham_bookregular'; line-height: 33px; background: #131c47;display: block;  margin: 0 auto;}
+.report-captions{text-align: center; color: #fff;position: relative;}
+.report-captions h2{margin: 0px; text-shadow: 2px 1px 5px #000;font-family: 'utopiabold'; font-weight: 400; font-size: 55px;color: #fff;margin: 25% 0 0 0;}
+.reports-download a:hover{ background: #c1971d;color: #fff;}
+.reports-img{    overflow: hidden; width: 100%;}
+.reports-img img{width: 100%; height:auto}
+
+/*****pagination*****/
+.pagition{text-align: center; }
+.pagition ul{margin: 0px auto; padding: 0px; list-style: none;    display: inline-block;}
+.pagition ul li{display: inline-block; float: left; margin: 0 10px 0 0; width: 29px; height: 29px; border: 1px solid #d3d3d3; background: #fff; }
+.pagition ul li.current{background: #cd9a2f; padding: 2px;display: block;color: #fff; }
+/*.pagition ul li a{background: #cd9a2f; padding: 2px;display: block;color: #fff; }*/
+
+.slide-overlay .meta-property-type
+{
+	padding-left:10px;
+}
+.footer-logo {
+    padding-left: 4px;
+    padding-right: 4px;
+}
+.address-wrapper .fa-map-marker {
+    padding-top: 2px;
+    padding-left: 3px;
+}
+
+/********Responsive*********/
+@media (min-width:200px) and (max-width:480px)
+{
+.slider-variation-two .slide-overlay {
+    position: relative;
+	display:none;
+}
+
+.stats-figures ul li h1 {
+    min-height: auto;
+}
+.stats-figures ul li p {
+    min-height: auto;
+    margin-bottom: 50px;
+    line-height: 20px;
+}
+.stats-report-btn a {
+    width: 100%;
+}
+.stats-report-signup {
+    width: 100%;
+}
+.stats-report-btn {
+    text-align: center;
+    width: 250px;
+    margin: auto;
+}
+.stats-report-signup {
+    width: 248px;
+    margin: auto;
+}
+.stats-report-signup input[type="email"] {
+    width: 208px;
+}
+.es_shortcode_form {
+    text-align: center;
+    margin: auto;
+    width: 260px;
+}
+.option-bar {
+    width: 100% !important;
+}
+.main-advance-search {
+    bottom: 0px;
+    position: relative;
+}
+.main-advance-search .option-bar{width: 100% !important;} 
+
+.home-header .header-variation-two{position: relative;top: 0px;}
+
+.footer-logo {
+    margin-bottom: 0px;
+    padding: 0 8px;
+}
+.copyright-text {
+    line-height: inherit;
+}
+/*Property Listing css Start*/
+.property-listing-simple {
+    margin: 0 0 0px 0;
+    padding: 25px 0 25px;
+}
+.property-listing-simple .titleandmeta {
+    padding-left: 5px;
+    padding-right: 5px;
+    margin: 15px 0 0;
+}
+.property-meta-listing ul li i {
+    line-height: 20px;
+    text-align: left;
+    margin-right: 13px;
+    float: left;
+}
+.property-meta-listing li:first-child span {
+    margin-top: inherit;
+    display: inline-block;
+    position: relative;
+    top: inherit;
+    float: left;
+    width: 82%;
+    line-height: 25px;
+}
+.product-search-header .hidden-lg {
+display:none;
+}
+.fa-map-marker {
+    padding-top: 10px;
+    padding-left: 3px;
+}
+.property-listing-simple-1 .price-wrapper .price {
+    font-weight: bold;
+    font-size: 16px;
+}
+.property-form input[type="submit"] {
+    width: 100%;
+}
+.single-map .col-lg-12 {
+    padding-left: 17px;
+    padding-right: 17px;
+}
+.property-location-section {
+    margin-bottom: 30px;
+    margin-top: 30px;
+}
+.widget_mortgage-calculator input[type="submit"] {
+    width: 100%;
+}
+.single-property-heading {
+    padding: 20px 0;
+}
+/*Property Listing css End*/
+
+.report-stats-heading span{padding: 0 0 35px 0;}
+.report-stats-heading span:before{background:none;}
+.report-stats-heading span:after{background:none;}
+.report-captions h2 {
+    font-size: 45px;
+}
+.contact-details address {
+    margin-bottom: 20px;
+}
+.site-pages {
+    padding-top: 20px;
+    padding-bottom: 20px;
+}
+.contact-details
+{
+	padding:10px;
+}
+#contact-form .btn-orange {
+    width:100%;
+}
+
+/*QC CHanges Start*/
+.property-listing-three {
+    padding-top: 25px;
+    padding-bottom: 10px;
+}
+
+.welcome-text {
+    margin-bottom: 25px;
+    text-align: center;
+}
+.welcome-text h2
+{
+	margin-bottom: 0;
+    line-height: 37px;
+}
+
+.property-listing-three-post .entry-header, .featured-properties-three .featured-property-post .entry-header{
+    margin-bottom: -10px;
+}
+.property-listing-three-post p, .featured-properties-three .featured-property-post p{
+    margin-bottom: 20px;
+}
+
+.property-listing-three-post .property-meta, .featured-properties-three .featured-property-post .property-meta {
+    border-top: 1px solid;
+    margin: 0 -28px;
+    padding: 12px 33px;
+    font-size: 12px;
+}
+.report-stats-container {
+    padding: 50px 0 40px;
+}
+.awards-achievement {
+    padding: 30px 0 30px 0;
+}
+.newsletter-contain {
+    padding: 45px 0 40px;
+}
+.es_caption span {
+    font-size: 18px;
+    line-height: 24px;
+    padding-top: 0px;
+    display: block;
+    margin-top: -8px;
+}
+.es_textbox {
+    width: 190px;
+}
+.es_textbox input[type="text"] {
+    width: 100%;
+    height: 41px;
+    padding: 2px 5px;
+    border: 1px solid #717171;
+    font-weight: 100;
+    font-family: 'gotham_lightregular';
+    font-size: 11px;
+}
+.es_button {
+    width: 54px;
+}
+.site-footer {
+    padding-top: 35px;
+    padding-bottom: 25px;
+}
+.site-footer .widget {
+    margin-bottom: 15px;
+}
+.stats-figures ul li {
+    display: block;
+    width: 100%;
+}
+.main-property-wrapper
+{
+	margin-top:-25px;
+}
+.page-id-155 .col-right-side
+{
+	padding:25px;
+}
+/*QC CHanges End*/
+}
+@media (width:320px)
+{
+.es_button {
+    width: 54px;
+}
+}
+@media (min-width:481px) and (max-width:767px)
+{
+.slider-variation-two .slide-inner-container {
+    right: 91px;
+}
+.stats-figures ul li h1 {
+    min-height: auto;
+}
+.stats-figures ul li p {
+    min-height: auto;
+    margin-bottom: 50px;
+	line-height: 20px;
+}
+
+.stats-report-btn {
+    text-align: center;
+    width: 250px;
+    margin: auto;
+}
+.stats-report-signup {
+    width: 248px;
+    margin: auto;
+}
+.stats-report-signup input[type="email"] {
+    width: 208px;
+}
+
+.stats-report-btn a {
+    width: 100%;
+}
+
+.es_shortcode_form {
+    text-align: center;
+    margin: auto;
+    width: 260px;
+}
+.es_textbox {
+    float: left;
+    display: inline-block;
+    width: 82%;
+}
+.option-bar {
+    width: 100% !important;
+}
+.main-advance-search {
+    bottom: 0px;
+    position: relative;
+}
+.main-advance-search .option-bar{width: 100% !important;} 
+
+.home-header .header-variation-two{position: relative;top: 0px;}
+
+.footer-logo {
+    margin-bottom: 0px;
+    padding: 0 8px;
+}
+.copyright-text {
+   line-height: inherit;
+}
+/*Property Listing css Start*/
+.property-listing-simple {
+    margin: 0 0 0px 0;
+    padding: 25px 0 25px;
+	max-width:100%;
+}
+.property-listing-simple .titleandmeta {
+    padding-left: 5px;
+    padding-right: 5px;
+    margin: 15px 0 0;
+}
+.product-search-header .hidden-lg {
+display:none;
+}
+.fa-map-marker {
+    padding-top: 10px;
+    padding-left: 3px;
+}
+.property-listing-simple-1 .price-wrapper .price {
+    font-weight: bold;
+    font-size: 16px;
+}
+.property-form input[type="submit"] {
+    width: 100%;
+}
+.single-map .col-lg-12 {
+    padding-left: 17px;
+    padding-right: 17px;
+}
+.property-location-section {
+    margin-bottom: 30px;
+    margin-top: 30px;
+}
+.widget_mortgage-calculator input[type="submit"] {
+    width: 100%;
+}
+.single-property-heading {
+    padding: 20px 0;
+}
+/*Property Listing css End*/
+.report-stats-heading span{padding: 0 0 35px 0;}
+.report-stats-heading span:before{background:none;}
+.report-stats-heading span:after{background:none;}
+
+.site-pages {
+    padding-top: 20px;
+    padding-bottom: 20px;
+}
+.contact-details
+{
+	padding:10px;
+}
+#contact-form .btn-orange {
+    width:100%;
+}
+
+
+/*QC CHanges Start*/
+.property-listing-three {
+    padding-top: 25px;
+    padding-bottom: 10px;
+}
+
+.welcome-text {
+    margin-bottom: 25px;
+    text-align: center;
+}
+.welcome-text h2
+{
+	margin-bottom: 0;
+    line-height: 37px;
+}
+
+.property-listing-three-post .entry-header, .featured-properties-three .featured-property-post .entry-header{
+    margin-bottom: -10px;
+}
+.property-listing-three-post p, .featured-properties-three .featured-property-post p{
+    margin-bottom: 20px;
+}
+
+.property-listing-three-post .property-meta, .featured-properties-three .featured-property-post .property-meta {
+    border-top: 1px solid;
+    margin: 0 -28px;
+    padding: 12px 33px;
+    font-size: 12px;
+}
+.report-stats-container {
+    padding: 50px 0 40px;
+}
+.awards-achievement {
+    padding: 30px 0 30px 0;
+}
+.newsletter-contain {
+    padding: 45px 0 40px;
+}
+.es_caption span {
+    font-size: 18px;
+    line-height: 24px;
+    padding-top: 0px;
+    display: block;
+    margin-top: -8px;
+}
+.es_textbox {
+    width: 190px;
+}
+.es_textbox input[type="text"] {
+    width: 100%;
+    height: 41px;
+    padding: 2px 5px;
+    border: 1px solid #717171;
+    font-weight: 100;
+    font-family: 'gotham_lightregular';
+    font-size: 11px;
+}
+.es_button {
+    width: 54px;
+}
+.site-footer {
+    padding-top: 35px;
+    padding-bottom: 25px;
+}
+.site-footer .widget {
+    margin-bottom: 15px;
+}
+.stats-figures ul li {
+    display: block;
+    width: 100%;
+}
+.main-property-wrapper
+{
+	margin-top:-25px;
+}
+.page-id-155 .col-right-side
+{
+	padding:25px;
+}
+/*QC CHanges End*/
+
+
+}
+@media (min-width:768px) and (max-width:1024px)
+{
+.slider-variation-two .slide-inner-container {
+    right: 91px;
+}
+.home-header .header-variation-two{position: relative; top:0;}
+.main-advance-search {
+    position: relative;
+	bottom:0;
+}
+.stats-figures ul li h1 {
+    min-height: inherit !important;
+}
+.stats-figures ul li p {
+    min-height: inherit !important;
+    margin-bottom: 50px;
+}
+.es_shortcode_form
+{
+	text-align:center;
+	width: 346px;
+    margin: auto;
+}
+.es_textbox {
+    float: left;
+    display: inline-block;
+    width: 87%;
+}
+.copyright-text {
+    line-height: inherit;
+}
+.product-search-header .hidden-lg {
+	display:none;
+}
+/*Property Listing css Start*/
+.page-head .container {
+    padding-left: 0;
+    padding-right: 0;
+}
+.page-head .main-advance-search {
+    position: absolute;
+    bottom: 25px;
+}
+.single-property-heading {
+    padding: 20px 0;
+}
+.single-map .col-lg-12 {
+    padding-left: 17px;
+    padding-right: 17px;
+}
+.property-location-section {
+    margin-bottom: 30px;
+    margin-top: 30px;
+}
+/*Property Listing css End*/
+.site-pages {
+    padding-top: 20px;
+    padding-bottom: 20px;
+}
+.contact-details
+{
+	padding:10px;
+}
+#contact-form .btn-orange {
+    width:100%;
+}
+
+/*QC CHanges Start*/
+.property-listing-three {
+    padding-top: 25px;
+    padding-bottom: 10px;
+}
+
+.welcome-text {
+    margin-bottom: 25px;
+    text-align: center;
+}
+.welcome-text h2
+{
+	margin-bottom: 0;
+    line-height: 37px;
+}
+
+.property-listing-three-post .entry-header, .featured-properties-three .featured-property-post .entry-header{
+    margin-bottom: -10px;
+}
+.property-listing-three-post p, .featured-properties-three .featured-property-post p{
+    margin-bottom: 20px;
+}
+
+.property-listing-three-post .property-meta, .featured-properties-three .featured-property-post .property-meta {
+    border-top: 1px solid;
+    margin: 0 -28px;
+    padding: 12px 33px;
+    font-size: 12px;
+}
+.report-stats-container {
+    padding: 50px 0 40px;
+}
+.awards-achievement {
+    padding: 30px 0 30px 0;
+}
+.newsletter-contain {
+    padding: 45px 0 40px;
+}
+.es_caption span {
+    font-size: 18px;
+    line-height: 24px;
+    padding-top: 0px;
+    display: block;
+    margin-top: -8px;
+}
+.es_textbox {
+    width: 292px;
+}
+.es_textbox input[type="text"] {
+    width: 100%;
+    height: 41px;
+    padding: 2px 5px;
+    border: 1px solid #717171;
+    font-weight: 100;
+    font-family: 'gotham_lightregular';
+    font-size: 11px;
+}
+.es_button {
+    width: 54px;
+}
+.site-footer {
+    padding-top: 35px;
+    padding-bottom: 25px;
+}
+.site-footer .widget {
+    margin-bottom: 15px;
+}
+.stats-figures ul li {
+    display: block;
+    width: 100%;
+}
+.main-property-wrapper
+{
+	margin-top:-25px;
+}
+/*QC CHanges End*/
+
+}
+
+@media (width:1024px)
+{
+.header-variation-two .col-lg-3
+{
+	float:left;
+	width:25%;
+}
+.header-variation-two .col-lg-9
+{
+	float:left;
+	width:75%;
+}
+.header-bottom
+{
+	top: 32px;
+    position: relative;
+}
+.slide-overlay .price-and-status {
+    text-align: center;
+}
+.stats-figures ul li h1 {
+    font-size: 45px;
+    font-weight: 500;
+    line-height: 39px;
+    min-height: 85px;
+}
+.stats-figures ul li h1 span {
+    font-size: 38px;
+}
+.stats-figures ul li p {
+    position: relative;
+    min-height: 238px;
+}
+.es_shortcode_form {
+    text-align: left;
+}
+.es_textbox {
+    float: left;
+    display: inline-block;
+    width: 80%;
+}
+.copyright-text {
+    line-height: 55px;
+}
+.product-search-header .hidden-lg {
+display:none;
+}
+.pro-listing-search .visible-md-inline-block
+{
+	display:none !important;
+}
+.single-map .col-lg-12 {
+    padding-left: 35px;
+    padding-right: 15px;
+}
+}

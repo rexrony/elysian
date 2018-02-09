@@ -1,0 +1,93 @@
+/*
+	Theme Name: Elysian Real Estate
+	Theme URI: http://brandstallion.com/
+	Description: BrandStallion theme for Real Estate Website.
+	Author: Ronald Jospeh
+	Author URI: http://themeforest.net/user/inspirythemes/portfolio
+	Version: 1.3.2
+	Text Domain: inspiry
+    Domain Path: /languages
+	License: GNU General Public License version 3.0
+	License URI: http://www.gnu.org/licenses/gpl-3.0.html
+	Tags: custom-background, threaded-comments, translation-ready, light, one-column, two-columns, three-columns, four-columns, custom-menu, theme-options, left-sidebar, right-sidebar, responsive-layout, featured-images, full-width-template, threaded-comments, post-formats, rtl-language-support, custom-colors
+
+	----------------------------------------------------------------------------------------------------------------*/
+@font-face{ 
+	font-family: 'Utopia';
+	src: url('fonts/Utopia.ttf') format('truetype');
+}
+@font-face{ 
+	font-family: 'Utopia-regular';
+	src: url('fonts/UtopiaRegular.ttf') format('truetype');
+}
+@font-face{ 
+	font-family: 'Utopia-bold';
+	src: url('fonts/UtopiaBold.ttf') format('truetype');
+}
+.clear{clear: both;}
+/***Footer Social Icons*****/
+.social-footer-icons{}
+.social-footer-icons ul{margin: 0px; padding: 0px; list-style: none;}
+.social-footer-icons ul li{display: inline-block; float: left;width: 27px; height: 27px; display: block; margin:0 13px 0 0;}
+.social-footer-icons ul li a{width: 27px; height: 27px; display: block;}
+.social-footer-icons ul li:nth-child(1){background: url(images/social-icon-footer.png);background-position: 0px 27px;}
+.social-footer-icons ul li:nth-child(2){background: url(images/social-icon-footer.png);background-position: -40px 27px;}
+.social-footer-icons ul li:nth-child(3){background: url(images/social-icon-footer.png);background-position: -82px 27px;}
+.social-footer-icons ul li:nth-child(4){background: url(images/social-icon-footer.png);background-position: -122px 27px;}
+
+.social-footer-icons ul li:nth-child(1):hover{background: url(images/social-icon-footer.png);background-position: 0px 0px; transition: all 0.5s ease;}
+.social-footer-icons ul li:nth-child(2):hover{background: url(images/social-icon-footer.png);background-position: -40px 0px; transition: all 0.5s ease;}
+.social-footer-icons ul li:nth-child(3):hover{background: url(images/social-icon-footer.png);background-position: -82px 0px; transition: all 0.5s ease;}
+.social-footer-icons ul li:nth-child(4):hover{background: url(images/social-icon-footer.png);background-position: -122px 0px; transition: all 0.5s ease;}
+
+/*****contact-info****/
+.contact-info{font-family: 'gotham_lightregular'; font-weight: 200; color: #767676;font-size: 14px;}
+.contact-info ul{margin: 0px; padding: 0px; list-style: none;}
+.contact-info ul li{margin: 0 0 10px 0px; position: relative; padding: 0 0 0 26px;}
+.contact-info ul li:nth-child(1){background: url(images/house-address.png) no-repeat;background-position: 0px 29px;}
+.contact-info ul li:nth-child(2){background: url(images/phone.png) no-repeat;background-position: 0px 2px;}
+.contact-info ul li:nth-child(3){background: url(images/mail.png) no-repeat;background-position: 0px 6px;}
+.contact-info ul li a{color: #767676 !important;}
+/****newsletter-widget****/
+.widget_newsletterwidget span{font-family: 'gotham_lightregular'; font-weight: 200; color: #767676;font-size: 14px; }
+.newsletter-widget input[type="email"]{border:1px dotted #d3d3d3; padding:5px 10px; margin: 10px 0;color: #767676; width:90%;font-family: 'gotham_lightregular'; font-weight: 200; }
+.newsletter-submit{background: #bf953c;width: 170px; height: 28px; color: #fff;border: 0px; text-transform: uppercase; }
+/*****menu-quick-links****/
+#menu-quick-links{}
+#menu-quick-links li{}
+#menu-quick-links li a{font-family: 'gotham_lightregular'; font-weight: 200; color: #767676;font-size: 14px;}
+#menu-quick-links li a:hover{color: #bf953c; text-decoration: underline;}
+
+/*****report-stats-container*****/
+.report-stats-container{background: url(images/report-stats.jpg) no-repeat; background-size: cover;  padding:75px 0 40px;}
+.report-stats-heading{text-align: center;margin: 0 0 40px 0;}
+.report-stats-heading h2{font-family: 'Utopia';  color: #bf953c;font-size: 30px;margin: 0 0 5px 0px;}
+.report-stats-heading span{position: relative;color:#ededed;font-family: 'gotham_lightregular'; font-weight: 200;border-bottom: 1px solid #545b86; padding: 0 0 20px 0;}
+.report-stats-heading span:after{content:""; background: url(images/triangle-bullet1.png) no-repeat;width: 11px; height: 11px; display: block;position: absolute;text-align: right;right: -2px;bottom: -6px;}
+.report-stats-heading span:before{content:""; background: url(images/triangle-bullet1.png) no-repeat;width: 11px; height: 11px; display: block;position: absolute;text-align:left;left: -2px;bottom: -6px;}
+
+.stats-figures ul{margin: 0px 0 10px 0; padding: 0px; list-style: none;}
+.stats-figures ul li{float: left; display: inline-block; margin: 0 0px 0 0; text-align: center; }
+.stats-figures ul li h1{color: #fff;font-family: 'Utopia-bold'; font-size: 70px;font-weight:500;}
+.stats-figures ul li p{color: #fff;font-size: 16px;font-family: 'gotham_lightregular';border-bottom: 1px solid #545b86;padding-bottom: 20px; position: relative;}
+
+.stats-figures ul li:nth-child(1) p:after{content:""; background: url(images/triangle-bullet2.png) no-repeat;width: 11px; height: 11px; display: block;position: absolute;text-align: center;left: 50%;bottom: -5px;}
+.stats-figures ul li:nth-child(2) p:after{content:""; background: url(images/triangle-bullet1.png) no-repeat;width: 11px; height: 11px; display: block;position: absolute;text-align: center;left: 50%;bottom: -5px;}
+.stats-figures ul li:nth-child(3) p:after{content:""; background: url(images/triangle-bullet2.png) no-repeat;width: 11px; height: 11px; display: block;position: absolute;text-align: center;left: 50%;bottom: -5px;}
+.stats-figures ul li:nth-child(4) p:after{content:""; background: url(images/triangle-bullet1.png) no-repeat;width: 11px; height: 11px; display: block;position: absolute;text-align: center;left: 50%;bottom: -5px;}
+
+.stats-report-btn{text-align: center; margin:35px 0 15px;}
+.stats-report-btn a{color:#fff; font-family: 'gotham_lightregular'; font-weight: 200;  text-transform: uppercase; width: 300px; height: 37px; margin: 0px auto; display: block; border: 1px solid #fff;line-height: 36px;}
+.stats-report-signup{text-align: center; position: relative;}
+.stats-report-signup input[type="email"]{border:0px dotted #fff; padding:7px 10px; margin: 10px 0;color: #767676; width:300px; font-family: 'gotham_lightregular'; font-weight: 200;    position: relative; display: inline-block;}
+.stats-report-signup input[type="submit"]{background: #bf953c;width: 170px; height: 28px; color: #fff;border: 0px; text-transform: uppercase; }
+.stats-report-signup button{width: 40px; height: 38px; background: url(images/submit-btn.png) no-repeat; border: 0px; top:11px;   position: relative; display: inline-block;}
+
+/****newsletter-contain******/
+.newsletter-contain{background: url(images/newsletter-bckgrnd.jpg) no-repeat; background-size: 100% 100%; width: 100%;padding: 65px 0 40px} 
+
+/****awards-heading*****/
+.awards-achievement{padding:40px 0 30px 0; position: relative; text-align: center;}
+.awards-heading{margin: 12px 0 30px 0;}
+.awards-heading h2{font-family: 'Utopia'; color: #424242; font-size: 30px; margin: 10px 0 5px 0;text-shadow: 0.5px 0px;}
+.awards-heading span{font-family: 'gotham_lightregular'; font-weight: 200; color: #6a6a6a; font-size: 14px;}
